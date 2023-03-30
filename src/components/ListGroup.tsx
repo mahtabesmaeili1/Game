@@ -9,11 +9,11 @@ function ListGroup() {
       {items.length === 0 && <p>No item found</p>}
 
       <ul className="list-group">
-        {items.map((item) => (
+        {items.map((item, index) => (
           <li
             className="list-group-item"
             key={item}
-            onClick={() => console.log("clicked")}
+            onClick={(event) => console.log(event)}
           >
             {" "}
             {item}
